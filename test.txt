@@ -9,3 +9,12 @@
 
 
 'to initialize a local directory as a git repository, command: git init'
+'it means it'll create a .git folder in the current directory"
+'to create a repo. and both initialize it as a git repo. command: git init directory_name'
+'to push it online, first create an empty repo on github and then copy the ssh'
+'then, command: git remote add origin sshkey'
+'to see if it worked, git remote -v'
+'then command: git push origin master' because it has no upstream set for git push (i.e. git push -u origin master)
+
+
+
