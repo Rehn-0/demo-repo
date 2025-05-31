@@ -16,5 +16,13 @@
 'to see if it worked, git remote -v'
 'then command: git push origin master' because it has no upstream set for git push (i.e. git push -u origin master)
 
+For branching: 
+command: git checkout branchname // 'git checkout -b branchname' if it's a new branch
+To check current branch: 
+command: git branch
+
+
+
+
 
 
