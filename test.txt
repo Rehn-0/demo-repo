@@ -21,9 +21,28 @@ command: git checkout branchname // 'git checkout -b branchname' if it's a new b
 To check current branch: 
 command: git branching
 
-a little change.
+when you make any changes in another branch, the other branches(main itc) stays intact. 
+to merge your code to main itc branch: 
+cd to main
+command: git merge feature
+or u can check the differences beforehand by 
+command: git diff feature 
 
+but the convenient way to merge branches is, you push the changes on its respective branch
+the make a pull request to merge with the main branch. 
 
+when you make a pull request with another branch (main in this case), 
+you can simply change the code, commit and push it to github
+// that'll do the merging for you. 
+command: git add test.txt   git commmit -m "description"   git push origin feature
+make a pr online, approve it. 
+// the feature branch will be merged with the main branch
+then to make them visible in your local machine, you have to pull the main branch. 
+command: git checkout main
+command: git pull 
+
+after merging, we can delete the feature branch
+command: git branch -d feature
 
 
 
