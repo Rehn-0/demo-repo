@@ -48,6 +48,18 @@ command: git branch -d feature
 command: git commit -am "added shortcut -a" 
 // -a for add, -m for message
 
+some quicktest line
+now i can't switch to the quick branch. (although I haven't commited these changes)
+error: Your local changes to the following files would be overwritten by checkout:
+test.txt
+now, we'll commit the changes of main branch, go to the quick branch, see differences, try to merge to main.
+command: git commit -am "description"      git checkout quick      git diff main    git merge main
 
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
 
+resolve the conflicts, and then merge.
+command: git merge main
 
