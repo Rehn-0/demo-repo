@@ -19,7 +19,9 @@
 For branching: 
 command: git checkout branchname // 'git checkout -b branchname' if it's a new branch
 To check current branch: 
-command: git branch
+command: git branching
+
+a little change.
 
 
 
