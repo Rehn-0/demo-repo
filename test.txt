@@ -44,6 +44,7 @@ command: git pull
 after merging, we can delete the feature branch
 command: git branch -d feature
 
+some quicktest line
 
 
 
