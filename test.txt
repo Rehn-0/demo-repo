@@ -44,6 +44,10 @@ command: git pull
 after merging, we can delete the feature branch
 command: git branch -d feature
 
+#shortcut for add and commit: (only for files that's been commited once)
+command: git commit -am "added shortcut -a" 
+// -a for add, -m for message
+
 
 
 
