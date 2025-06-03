@@ -30,11 +30,7 @@ or u can check the differences beforehand by
 command: git diff feature 
 
 but the convenient way to merge branches is, you push the changes on its respective branch
-the make a pull request to merge with the main branch. 
-
-when you make a pull request with another branch (main in this case), 
-you can simply change the code, commit and push it to github
-// that'll do the merging for you. 
+then make a pull request to merge with the main branch. 
 command: git add test.txt   git commmit -m "description"   git push origin feature
 make a pr online, approve it. 
 // the feature branch will be merged with the main branch
@@ -50,10 +46,10 @@ command: git commit -am "added shortcut -a"
 // -a for add, -m for message
 
 some quicktest line
-now i can't switch to the quick branch. (although I haven't commited these changes)
+now I can't switch to the quick branch. (I haven't commited these changes)
 error: Your local changes to the following files would be overwritten by checkout:
 test.txt
-now, we'll commit the changes of main branch, go to the quick branch, see differences, try to merge to main.
+now, we'll commit the changes of main branch, go to the quick branch, see differences, try to merge to quick.
 command: git commit -am "description"      git checkout quick      git diff main    git merge main
 
 error: Merging is not possible because you have unmerged files.
@@ -63,4 +59,12 @@ fatal: Exiting because of an unresolved conflict.
 
 resolve the conflicts, and then merge.
 command: git merge main
+
+So the thing is: 
+when you work with multiple people on the same file, the main branch gets updated time to time on github. 
+You can't just push your branch online and make a pull request to merge with the main. It would show conflicts. 
+You first pull the latest main branch on your feature branch, resolve any conflicts
+and then do your part of the changes, push it online, make a pull request to merge with the main 
+Again, some conflicts! Haha...Etai bastob! 
+
 
