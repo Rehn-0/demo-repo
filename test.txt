@@ -17,9 +17,10 @@
 'then command: git push origin master' because it has no upstream set for git push (i.e. git push -u origin master)
 
 For branching: 
-command: git checkout branchname // 'git checkout -b branchname' if it's a new branch
-To check current branch: 
-command: git branching
+command: git checkout branchname // switch between branches
+command: git checkout -b branchname // create and switch to a new branch
+command: git branch branchname // create a new branch
+command: git branch // check current branch
 
 when you make any changes in another branch, the other branches(main itc) stays intact. 
 to merge your code to main itc branch: 
