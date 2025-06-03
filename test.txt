@@ -30,7 +30,7 @@ or u can check the differences beforehand by
 command: git diff feature 
 
 but the convenient way to merge branches is, you push the changes on its respective branch
-the make a pull request to merge with the main branch. 
+then make a pull request to merge with the main branch. 
 
 when you make a pull request with another branch (main in this case), 
 you can simply change the code, commit and push it to github
